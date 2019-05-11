@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>audio_stop_all()
-if (room == room0) audio_play_sound(asrmus, 60, 1)
+if (room == room0 || room == room3) audio_play_sound(asrmus, 60, 1)
 if (room == room2) audio_play_sound(spooky, 60, 1)
 </string>
           </argument>
@@ -51,6 +51,7 @@ if (room == room2) audio_play_sound(spooky, 60, 1)
           <argument>
             <kind>1</kind>
             <string>if (instance_exists (obj_asriel_bg)) obj_asriel_bg.ftimer = 340
+if (instance_exists(fake_asriel)) fake_asriel.bk = !fake_asriel.bk
 </string>
           </argument>
         </arguments>

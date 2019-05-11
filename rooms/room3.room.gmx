@@ -53,6 +53,7 @@
   <instances>
     <instance objName="obj_player" x="0" y="0" name="inst_28BC95ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="fake_asriel" x="258" y="8" name="inst_B98A0A73" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_asriel_bg" x="20" y="0" name="inst_7746E047" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

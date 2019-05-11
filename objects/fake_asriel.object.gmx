@@ -77,7 +77,7 @@ self.depth = -2
             <kind>1</kind>
             <string>if (self.bk){
 self.azr = instance_create(x, y, asr2)
-self.azr.sprite_index = self.sprite_index
+self.azr.sprite_index = asr_afterimager
 self.azr.image_alpha = 0.5
 self.azr.depth = self.depth + 1
 self.azr.image_angle = self.image_angle
@@ -106,10 +106,12 @@ self.alarm[0] = 1
           <argument>
             <kind>1</kind>
             <string>randomize()
+
 self.siner = (self.siner + 1)
 if (self.bk){
 self.x = (self.x + (cos((self.siner / 24)) * 6))
 self.y = (self.y + (sin((self.siner / 6)) * 0.25))
+if (room == room2) self.y = self.y * sin(choose(0.5, 1.005))
 if (room == room2) {
 self.x = (self.x + sin(cos((self.siner / 12)) * 6) * 6 + cos(self.siner * 4))
 self.y = (self.y + sin(sin((self.siner / 2)) * 0.25) * 8 + cos(self.siner * 2))
@@ -121,6 +123,9 @@ self.y += sin(6.66 / self.siner)
 //self.x += choose(6.66, -6.66)
 //obj_asriel_bg.image_alpha = 0.5
 }
+}else{
+self.y = (self.y + (sin((self.siner / 6)) * 0.25))
+if (room == room2) self.y = self.y * sin(choose(0.5, 1.005))
 }
 </string>
           </argument>
