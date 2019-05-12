@@ -15,9 +15,11 @@
     <sprite>sprites\asr_afterimager</sprite>
     <sprite>sprites\dunn_asr</sprite>
     <sprite>sprites\chords_spr</sprite>
+    <sprite>sprites\chordsx</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\chords</background>
+    <background>background\chordsx2</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -28,6 +30,7 @@
     <object>objects\obj_player</object>
     <object>objects\fake_asriel</object>
     <object>objects\asr2</object>
+    <object>objects\obj_perzglobals</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
